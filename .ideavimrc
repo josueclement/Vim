@@ -1,0 +1,40 @@
+set incsearch
+set ignorecase
+set hlsearch
+set number
+set relativenumber
+
+let mapleader = " "
+
+nnoremap L $
+nnoremap H ^
+
+" nmap <leader>h :action PreviousTab<CR>
+" nmap <leader>l :action NextTab<CR>
+nmap <leader>ct :action CloseEditor<CR>
+
+" file navigation
+nnoremap gh :action PreviousTab<CR>
+nnoremap gl :action NextTab<CR>
+nnoremap gj :action MethodDown<CR>
+nnoremap gk :action MethodUp<CR>
+nnoremap gs :action GotoSuperMethod<CR>
+nnoremap gi :action GotoImplementation<CR>
+nnoremap g, :action JumpToLastChange<CR>
+nnoremap g. :action JumpToNextChange<CR>
+nnoremap gd :action GotoDeclaration<CR>
+nnoremap gr :action RecentFiles<CR>
+nnoremap <leader>re :action RenameElement<CR>
+vnoremap <leader>re :action RenameElement<CR>
+
+nnoremap <leader>ge :action Generate<CR>
+nnoremap <leader>ac :action ShowIntentionActions<CR>
+
+nnoremap <leader>ff :action FindInPath<CR>
+nnoremap <leader>rf :action ReplaceInPath<CR>
+
+nnoremap <leader>er :action ExpandAllRegions<CR>
+nnoremap <leader>cr :action CollapseAllRegions<CR>
+
+nnoremap <leader>fw :action AceWordAction<CR>
+nnoremap <leader>fp :action AceTargetAction<CR>

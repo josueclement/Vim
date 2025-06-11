@@ -35,3 +35,16 @@ Windows: [Nightly release](https://github.com/neovim/neovim/releases/nightly), [
 Windows path: `%LocalAppData%\nvim\`
 
 Linux path: '~/.config/nvim/'
+
+## JetBrains Rider
+
+### Plugins
+
+- `IdeaVim`
+- `AceJump`
+
+### Configuration
+
+[.ideavimrc](.ideavimrc) is the Rider IdeaVim configuration file
+
+Windows path: `%HOMEPATH%`
