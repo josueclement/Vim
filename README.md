@@ -34,4 +34,4 @@ Windows: [Nightly release](https://github.com/neovim/neovim/releases/nightly), [
 
 Windows path: `%LocalAppData%\nvim\`
 
-Linux path: '~/.config/nvim'
+Linux path: '~/.config/nvim/'
