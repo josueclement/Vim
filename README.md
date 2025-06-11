@@ -7,7 +7,11 @@
 
 If the error (Error code: Wsl/InstallDistro/Service/RegisterDistro/CreateVm/HCS/HCS_E_SERVICE_NOT_AVAILABLE) appears, enable virtualization in BIOS
 
-To remove green highlighted color, edit `~/.bashrc` and add at the end of the file: `LS_COLORS=$LS_COLORS:'ow=1;34:' ; export LS_COLORS`
+To remove green highlighted color, edit `~/.bashrc` and add at the end of the file:
+
+```Bash
+LS_COLORS=$LS_COLORS:'ow=1;34:' ; export LS_COLORS`
+```
 
 ## Neovim
 
