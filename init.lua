@@ -151,6 +151,7 @@ vim.o.splitbelow = true
 --   and `:help lua-options-guide`
 vim.o.list = true
 vim.opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
+vim.opt.wrap = false
 
 -- Preview substitutions live, as you type!
 vim.o.inccommand = "split"
@@ -170,20 +171,20 @@ vim.o.confirm = true
 --  See `:help vim.keymap.set()`
 
 -- Ctrl+C to copy to system clipboard
-vim.keymap.set('n', '<C-c>', '"+y', { desc = 'Copy to system clipboard' })
-vim.keymap.set('v', '<C-c>', '"+y', { desc = 'Copy to system clipboard' })
+vim.keymap.set("n", "<C-c>", '"+y', { desc = "Copy to system clipboard" })
+vim.keymap.set("v", "<C-c>", '"+y', { desc = "Copy to system clipboard" })
 
 -- Ctrl+V to paste from system clipboard
-vim.keymap.set('n', '<C-v>', '"+p', { desc = 'Paste from system clipboard' })
-vim.keymap.set('v', '<C-v>', '"+p', { desc = 'Paste from system clipboard' })
+vim.keymap.set("n", "<C-v>", '"+p', { desc = "Paste from system clipboard" })
+vim.keymap.set("v", "<C-v>", '"+p', { desc = "Paste from system clipboard" })
 
 -- Ctrl+A to select all
-vim.keymap.set('n', '<C-a>', 'ggVG', { desc = 'Select all' })
-vim.keymap.set('v', '<C-a>', 'ggVG', { desc = 'Select all' })
+vim.keymap.set("n", "<C-a>", "ggVG", { desc = "Select all" })
+vim.keymap.set("v", "<C-a>", "ggVG", { desc = "Select all" })
 
 -- Ctrl+S to save
-vim.keymap.set('n', '<C-s>', '<cmd>w<CR>', { desc = 'Save file' })
-vim.keymap.set('v', '<C-s>', '<cmd>w<CR>', { desc = 'Save file' })
+vim.keymap.set("n", "<C-s>", "<cmd>w<CR>", { desc = "Save file" })
+vim.keymap.set("v", "<C-s>", "<cmd>w<CR>", { desc = "Save file" })
 
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
