@@ -52,23 +52,39 @@ nnoremap <leader>we :action ActivateProjectToolWindow<CR>
 nnoremap <leader>wl :action LocateInSolutionView<CR>
 
 " Split
-nnoremap <leader>spv :action MoveTabRight<CR>
-nnoremap <leader>sph :action MoveTabDown<CR>
-nnoremap <leader>spu :action Unsplit<CR>
-nnoremap <leader>spa :action UnsplitAll<CR>
-nnoremap <leader>spn :action NextSplitter<CR>
-nnoremap <leader>spp :action PrevSplitter<CR>
+nnoremap <leader>tl :action MoveTabRight<CR>
+nnoremap <leader>tj :action MoveTabDown<CR>
+nnoremap <leader>tu :action Unsplit<CR>
+nnoremap <leader>ta :action UnsplitAll<CR>
+nnoremap <leader>tn :action NextSplitter<CR>
+nnoremap <leader>tp :action PrevSplitter<CR>
+
+" Close tabs
+nnoremap <leader>ca :action CloseAllEditors<CR>
+nnoremap <leader>co :action CloseAllEditorsButActive<CR>
 
 " Registers
+nnoremap <leader>yy "+y
 nnoremap <leader>y1 "1y
 nnoremap <leader>y2 "2y
 nnoremap <leader>y3 "3y
 nnoremap <leader>y4 "4y
+vnoremap <leader>yy "+y
+vnoremap <leader>y1 "1y
+vnoremap <leader>y2 "2y
+vnoremap <leader>y3 "3y
+vnoremap <leader>y4 "4y
 
+nnoremap <leader>pp "+p
 nnoremap <leader>p1 "1p
 nnoremap <leader>p2 "2p
 nnoremap <leader>p3 "3p
 nnoremap <leader>p4 "4p
+vnoremap <leader>pp "+p
+vnoremap <leader>p1 "1p
+vnoremap <leader>p2 "2p
+vnoremap <leader>p3 "3p
+vnoremap <leader>p4 "4p
 
 " Set bookmarks
 nnoremap <leader>m1 :action ToggleBookmark1<CR>
